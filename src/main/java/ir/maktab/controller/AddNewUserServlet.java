@@ -1,6 +1,6 @@
 package ir.maktab.controller;
 
-import ir.maktab.model.Person;
+import ir.maktab.data.model.Person;
 import ir.maktab.service.UserService;
 
 import javax.servlet.ServletException;

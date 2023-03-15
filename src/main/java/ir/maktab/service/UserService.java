@@ -1,14 +1,22 @@
 package ir.maktab.service;
 
-import ir.maktab.model.Person;
-import ir.maktab.repository.UserRepositoryImpl;
+import ir.maktab.data.model.Person;
+import ir.maktab.data.repository.UserRepository;
+import ir.maktab.exception.InvalidPasswordException;
+import ir.maktab.exception.UserNotFoundException;
 
 public class UserService {
-    UserRepositoryImpl userRepository = new UserRepositoryImpl();
-    public Person login(String username , String password){
-        return userRepository.findByUsernameAndPassword(username,password);
+
+    UserRepository userRepository;
+
+    public Person login(String username, String password) {
+        Person person = userRepository.findPersonByUsername(username).orElseThrow(UserNotFoundException::new);
+        if (person.getPassword().equals(password))
+            return person;
+        throw new InvalidPasswordException();
     }
-    public void addNewUser(Person person){
-        userRepository.creat(person);
+
+    public void addNewUser(Person person) {
+        userRepository.save(person);
     }
 }

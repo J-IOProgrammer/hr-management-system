@@ -1,4 +1,4 @@
-<%@ page import="ir.maktab.model.Person" %><%--
+<%@ page import="ir.maktab.data.model.Person" %><%--
   Created by IntelliJ IDEA.
   User: pc1
   Date: 12/31/2022

@@ -1,31 +1,24 @@
-package ir.maktab.model;
+package ir.maktab.data.model;
 
-import lombok.AccessLevel;
+import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.experimental.FieldDefaults;
+import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@FieldDefaults(level = AccessLevel.PRIVATE)
-public class Person {
+@Getter
+@Setter
+public class Person extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
-    String firstName;
-    String lastName;
-    int age;
-    String country;
-    String username;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String country;
+    private String username;
+    private String password;
 
     public Person(String firstName, String lastName, int age, String country, String username) {
         this.firstName = firstName;

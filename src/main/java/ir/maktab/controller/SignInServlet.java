@@ -2,21 +2,27 @@ package ir.maktab.controller;
 
 import ir.maktab.data.model.Person;
 import ir.maktab.service.UserService;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@Controller
 @WebServlet(name = "SignInServlet", value = "/sign-in-servlet")
+@RequiredArgsConstructor
 public class SignInServlet extends HttpServlet {
+
+    UserService userService;
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
-        UserService userService = new UserService();
         String userName = req.getParameter("userName");
         String password = req.getParameter("password");
         Person person = userService.login(userName, password);

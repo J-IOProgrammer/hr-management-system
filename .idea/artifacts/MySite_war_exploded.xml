@@ -16,19 +16,20 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.mysql:mysql-connector-j:8.0.32" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.21.9" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:3.0.3" />
-          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:3.0.3" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-orm:6.0.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:6.0.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-context:6.0.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-expression:6.0.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:6.0.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-tx:6.0.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:6.0.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:6.0.6" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:6.0.6" />
-          <element id="library" level="project" name="Maven: jakarta.annotation:jakarta.annotation-api:2.0.0" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-jpa:2.7.5" />
+          <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:2.7.5" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.32" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.14.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.14.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.14.2" />

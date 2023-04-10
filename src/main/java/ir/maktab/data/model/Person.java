@@ -1,16 +1,14 @@
 package ir.maktab.data.model;
 
 import jakarta.persistence.Entity;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Getter
 @Setter
+@Builder
 public class Person extends BaseEntity {
 
     private String firstName;
@@ -19,12 +17,4 @@ public class Person extends BaseEntity {
     private String country;
     private String username;
     private String password;
-
-    public Person(String firstName, String lastName, int age, String country, String username) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.country = country;
-        this.username = username;
-    }
 }
